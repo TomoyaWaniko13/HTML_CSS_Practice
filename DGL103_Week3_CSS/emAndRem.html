@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <style>
+      html {
+        font-size: 32px;
+      }
+      /** em 指定 **/
+      .p-em {
+        font-size: 2em; /* -> 64px; */
+      }
+      .span-em {
+        font-size: 0.5em; /* -> 32px; */
+      }
+
+      .p-rem {
+        font-size: 2rem; /* -> 64px */
+      }
+      .span-rem {
+        font-size: 0.5rem; /* -> 16px */
+      }
+    </style>
+  </head>
+  <body>
+    <p class="p-em">
+      This is (2em)64px.
+      <span class="span-em">This is (0.5em)32px.</span>
+    </p>
+
+    <p class="p-rem">
+      This is (2rem) 64px.
+      <span class="span-rem">This is (0.5rem) 16px.</span>
+    </p>
+  </body>
+</html>
