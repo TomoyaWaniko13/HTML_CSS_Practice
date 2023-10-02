@@ -1,6 +1,6 @@
 ul {
   list-style: none;
-  margin: 20px;
+  margin: 0px;
   padding: 20px;
   /* for inline elements */
   text-align: center;
@@ -24,4 +24,23 @@ li {
 }
 .li4 {
   background-color: #c61b40;
+}
+
+.flex-list {
+  /*  */
+  display: flex;
+
+  /* set on the parent of the elements
+  you want to wrap */
+  flex-wrap: wrap;
+}
+
+.flex-list li {
+  /*fill as much space as it can */
+  flex: auto;
+
+  /* set on the elements you want to wrap */
+  /* when using a %, the size element will
+   become relative to the size of its parents */
+  width: 50%;
 }
