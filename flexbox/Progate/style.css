@@ -29,30 +29,25 @@ li {
 .flex-list {
   /*  */
   display: flex;
-
-  /* set on the parent of the elements
-  you want to wrap */
-  flex-wrap: wrap;
 }
 
 .flex-list li {
   /*fill as much space as it can */
   flex: auto;
-
-  /* set on the elements you want to wrap */
-  /* when using a %, the size element will
-   become relative to the size of its parents */
-  width: 50%;
 }
 
 /* layout for Tablet Devices */
 /* (670px, 1000px) */
 @media (max-width: 1000px) {
+  /* set on the parent of the elements
+  you want to wrap */
   .flex-list {
-    flex-wrap: wrap;`
+    flex-wrap: wrap;
   }
 
   /* set on the elements you want to wrap */
+  /* when using a %, the size element will
+   become relative to the size of its parents */
   .flex-list li {
     width: 50%;
   }
@@ -61,6 +56,8 @@ li {
 /* Layout for smartphone devices */
 /*(0,670px) */
 @media (max-width: 670px) {
+  /* set on the parent of the elements
+  you want to wrap */
   .flex-list {
     flex-direction: column;
   }
