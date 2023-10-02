@@ -44,3 +44,29 @@ li {
    become relative to the size of its parents */
   width: 50%;
 }
+
+/* layout for Tablet Devices */
+/* (670px, 1000px) */
+@media (max-width: 1000px) {
+  .flex-list {
+    flex-wrap: wrap;`
+  }
+
+  /* set on the elements you want to wrap */
+  .flex-list li {
+    width: 50%;
+  }
+}
+
+/* Layout for smartphone devices */
+/*(0,670px) */
+@media (max-width: 670px) {
+  .flex-list {
+    flex-direction: column;
+  }
+
+  .flex-list li {
+    /*for block elements  */
+    margin: 0 auto;
+  }
+}
