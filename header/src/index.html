@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            text-decoration: none;
+            box-sizing:border-box;
+            font-family:monospace;
+        }
+        body{
+            font-family: monterrat,serif ;
+        }
+        nav{
+            background:#0082e6;
+            height: 80px;
+            width:100%;
+        }
+
+        label.logo{
+            color:white;
+            font-size:35px;
+            line-height:80px;
+            padding:0 100px;
+            font-weight:bold;
+        }
+        nav ul{
+            float:right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display:inline-block;
+            line-height:80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a{
+            color:white;
+            font-size:17px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            padding:7px 13px;
+        }
+        a:active, a:hover {
+            background: #1b9bff;
+            transition: .5s;
+            padding: 7px 13px;
+        }
+
+        .check-btn {
+            font-size:30px;
+            color: white;
+            float:right;
+            line-height:80px;
+            margin-right:40px;
+            cursor:pointer;
+            display: none;
+        }
+
+        #check{
+            display:none;
+        }
+
+        @media(max-width: 952px){
+            label.logo{
+                font-size:30px;
+                padding-left:100px;
+            }
+            nav ul li a{
+                font-size:16px;
+            }
+        }
+        @media(max-width: 858px){
+            .check-btn{
+                display: block;
+            }
+            ul{
+                position:fixed;
+                width:100%;
+                heigth:100vh;
+                background: #2c3e50;
+                /*top:80px;*/
+                left:-100%;
+                text-align:center;
+                transition:all .5s;
+            }
+            nav ul li{
+                display: block;
+            }
+            nav ul li a{
+                font-size:20px;
+            }
+            a:hover, a.active {
+                background: none;
+                color: #0082e6;
+            }
+            #check:checked ~ul{
+                left:0;
+            }
+        }
+    </style>
+</head>
+<body>
+<h2 id="width"></h2>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="check-btn">
+            <i class="fa-solid fa-burger"></i>
+        </label>
+        <label class="logo">Design X</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showWidth(){
+            const width = window.innerWidth;
+            document.getElementById("width").innerText = `Width: ${width} px`
+        }
+
+        window.onload = showWidth;
+        window.onresize = showWidth;
+    </script>
+</body>
+
+</html>
