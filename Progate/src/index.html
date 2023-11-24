@@ -6,26 +6,28 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Progate</title>
-    <link href="/dist/output.css" rel="stylesheet">
+<!--    <link href="/dist/output.css" rel="stylesheet">-->
     <script src="https://kit.fontawesome.com/f9dcfd0d96.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-mono">
 <header>
-    <nav class="bg-gray-700 h-16 overflow-hidden ">
-        <a href="https://www.w3schools.com/css/css_link.asp">
-            <i class="fa-solid fa-house text-white p-5"></i>
-        </a>
-        <div class="float-right mx-10 my-5">
-            <a href="https://progate.com/"
-               class="mx-5 my-2 p-3 bg-white rounded-2xl hover:bg-black hover:text-white">Log in</a>
-            <a href="https://progate.com/"
-               class="mx-5 my-2 p-3 bg-white rounded-2xl hover:bg-black hover:text-white"> Learn more</a>
-        </div>
+    <nav class="fixed flex justify-between bg-black w-full">
+                <a href="https://www.w3schools.com/css/css_link.asp">
+                    <i class="fa-solid fa-house text-white p-5"></i>
+                </a>
+                <div class="mx-10 my-5">
+                    <a href="https://progate.com/"
+                       class="mx-5 my-4 p-3  bg-white rounded-2xl  hover:bg-black hover:text-white">Log in</a>
+                    <a href="https://progate.com/"
+                       class="mx-5 my-4 p-3 bg-white  rounded-2xl hover:bg-black hover:text-white"> Learn more</a>
+                </div>
+
     </nav>
 
 </header>
 <main>
-    <section class="mx-auto  p-10 ">
+    <section class="mx-auto  p-10">
         <h1 class="text-5xl uppercase m-10 tracking-normal leading-normal text-center">
             learn to code.<br> learn to be creative.</h1>
         <p class="text-2xl m-10 text-gray-700 text-center">Progate is a web service where you can learn programming
@@ -51,18 +53,98 @@
         </div>
     </section>
     <section class="mt-12">
-        <div class="text-center bg-gray-100">
-            <h1 class="text-3xl">Learn where to get started!</h1>
-           <div class="flex">
-               <div class="w-1/4">A</div>
-               <div class="w-1/4">A</div>
-               <div class="w-1/4">A</div>
-               <div class="w-1/4">A</div>
-           </div>
-        </div>
+        <div class="text-center bg-gray-100 p-10">
+            <h1 class="text-5xl p-10">Learn where to get started!</h1>
+            <div class="flex">
+                <div class="w-1/4">
+                    <div>
+                        <div class="p-5">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                                <img src="images/js.svg" alt="JavaScript logo" class="mx-auto my-0" width="150"
+                                     height="150">
+                            </a></div>
+                        <p class="text-xl">JavaScript (JS) is a lightweight interpreted (or just-in-time compiled)
+                            programming language
+                            with first-class functions.</p>
+                    </div>
+                </div>
+                <div class="w-1/4">
+                    <div class="p-5">
+                        <a href="https://docs.python.org/3/tutorial/index.html">
+                            <img src="images/python.svg" alt="Python logo" class="mx-auto my-0" width="150"
+                                 height="150">
+                        </a>
+                    </div>
+                    <p class="text-xl">Python is an easy to learn, powerful programming language. It has efficient
+                        high-level data
+                        structures and a simple but effective approach to object-oriented programming.</p>
+                </div>
+                <div class="w-1/4">
+                    <div class="p-5">
+                        <a href="https://docs.oracle.com/en/java/">
+                            <img src="images/java.svg" alt="Java logo" class="mx-auto my-0" width="130" height="130">
+                        </a>
+                    </div>
+                    <p class="text-xl">Java is a multi-platform, object-oriented, and network-centric language that can
+                        be used as a platform in itself.</p>
+                </div>
+                <div class="w-1/4">
+                    <div class="p-5">
+                        <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5">
+                            <img src="images/html5.svg" alt="HTML logo" class="mx-auto my-0" width="130"
+                                 height="130">
+                        </a>
+                    </div>
 
+                    <p class="text-xl">The term HTML5 is essentially a buzzword that refers to a set of modern web
+                        technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="m-10">
+        <div class="text-center p-5">
+            <h1 class="text-5xl">Ready to become an awesome programmer?</h1>
+            <p class="text-3xl m-10">Let's learn to code, learn to be creative!</p>
+            <a href="https://progate.com/dashboard">
+                <button class="border border-gray-700 p-10 rounded-2xl bg-blue-700 text-white shadow-2xl">Start Learning
+                </button>
+            </a>
+        </div>
     </section>
 </main>
-
+<footer>
+    <section>
+        <div class="flex justify-center items-center bg-gray-100">
+                <div class="mx-10">
+                    <h1 class="text-2xl">Progate</h1>
+                    <p>Learn to code. <br>Learn to be creative.</p>
+                </div>
+            <div class="mx-10">
+                <h1 class="text-2xl">Learn Progate</h1>
+                <ul>
+                    <li class="p-1"><a href="https://progate.com/courses">About us</a></li>
+                    <li class="p-1"><a href="https://progate.com/courses">Press</a></li>
+                    <li class="p-1"><a href="https://progate.com/courses">Careers</a></li>
+                    <li class="p-1"><a href="https://progate.com/courses">Privacy Policy</a></li>
+                    <li class="p-1"><a href="https://progate.com/courses">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="mx-10">
+                <ul>
+                    <li><a href="https://progate.com/courses">Contact us</a></li>
+                    <li><a href="https://progate.com/courses">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="mx-10">
+                <ul>
+                    <li><a href="https://progate.com/courses">Facebook</a></li>
+                    <li><a href="https://progate.com/courses">Twitter</a></li>
+                    <li><a href="https://progate.com/courses">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</footer>
 </body>
 </html>
