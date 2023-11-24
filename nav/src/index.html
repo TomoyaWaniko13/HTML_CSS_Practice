@@ -5,29 +5,35 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hamburger</title>
+    <title>Title</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans">
-<div class="w-12">
-    <div class="menu-icon cursor-pointer p-2.5" onclick="toggleMenu()">
-        <div class="h-0.5 bg-black mb-1.5"></div>
-        <div class="h-0.5 bg-black mb-1.5"></div>
-        <div class="h-0.5 bg-black"></div>
+<body class="font-mono">
+<div class="hamburger-menu">
+    <div class="menu-icon-container flex justify-end">
+        <div class="w-12">
+            <div class="menu-icon cursor-pointer p-2.5" onclick="toggleMenu()">
+                <div class="h-0.5 bg-black mb-1.5"></div>
+                <div class="h-0.5 bg-black mb-1.5"></div>
+                <div class="h-0.5 bg-black mb-1.5"></div>
+            </div>
+        </div>
     </div>
-    <ul class="menu-content list-none p-0 hidden" id="menu">
-        <li><a href="#" class="no-underline text-black block py-2.5 px-0 hover:bg-gray-200">Home</a></li>
-        <li><a href="#" class="no-underline text-black block py-2.5 px-0 hover:bg-gray-200">About</a></li>
-        <li><a href="#" class="no-underline text-black block py-2.5 px-0 hover:bg-gray-200">Services</a></li>
-        <li><a href="#" class="no-underline text-black block py-2.5 px-0 hover:bg-gray-200">Contact</a></li>
-    </ul>
+    <div class="menu-content-container flex justify-end">
+        <ul class="menu-content list-none hidden mr-4" id="menu">
+            <li><a href="#" class="block py-1.5">Home</a></li>
+            <li><a href="#" class="block py-1.5">About</a></li>
+            <li><a href="#" class="block py-1.5">Service</a></li>
+            <li><a href="#" class="block py-1.5">Contact</a></li>
+        </ul>
+    </div>
 </div>
 
 <script>
-    function toggleMenu() {
+    function toggleMenu(){
         const menu = document.getElementById("menu");
         menu.classList.toggle("hidden");
     }
 </script>
 </body>
-
+</html>
