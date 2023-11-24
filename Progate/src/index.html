@@ -10,22 +10,29 @@
     <script src="https://kit.fontawesome.com/f9dcfd0d96.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-mono">
+<body class="font-mono box-border">
+
 <header>
     <nav class="fixed flex justify-between bg-black w-full">
                 <a href="https://www.w3schools.com/css/css_link.asp">
                     <i class="fa-solid fa-house text-white p-5"></i>
                 </a>
-                <div class="mx-10 my-5">
+                <div class="hidden md:flex ">
                     <a href="https://progate.com/"
                        class="mx-5 my-4 p-3  bg-white rounded-2xl  hover:bg-black hover:text-white">Log in</a>
                     <a href="https://progate.com/"
                        class="mx-5 my-4 p-3 bg-white  rounded-2xl hover:bg-black hover:text-white"> Learn more</a>
                 </div>
 
+        <div class="md:hidden space-y-2 p-5">
+            <div class="w-8 h-0.5 bg-white"></div>
+            <div class="w-8 h-0.5 bg-white"></div>
+            <div class="w-8 h-0.5 bg-white"></div>
+        </div>
     </nav>
 
 </header>
+<!--<h2 id="screen-width" class="fixed h-10 text-white"></h2>-->
 <main>
     <section class="mx-auto  p-10">
         <h1 class="text-5xl uppercase m-10 tracking-normal leading-normal text-center">
@@ -145,6 +152,14 @@
             </div>
         </div>
     </section>
+    <script>
+        function showBrowserWidth() {
+            const w = window.innerWidth;
+            document.getElementById("screen-width").innerText = `Width: ${w}px`;
+        }
+        window.onload = showBrowserWidth;
+        window.onresize = showBrowserWidth;
+    </script>
 </footer>
 </body>
 </html>
