@@ -14,13 +14,12 @@
             margin:0;
             text-decoration: none;
             box-sizing:border-box;
-            font-family:monospace;
         }
         body{
-            font-family: monterrat,serif ;
+            font-family: monospace,serif ;
         }
         nav{
-            background:#0082e6;
+            background:black;
             height: 80px;
             width:100%;
         }
@@ -85,22 +84,23 @@
             ul{
                 position:fixed;
                 width:100%;
-                heigth:100vh;
-                background: #2c3e50;
+                height:100vh;
+                background: white;
                 /*top:80px;*/
                 left:-100%;
                 text-align:center;
-                transition:all .5s;
+                transition:all 0.5s;
             }
             nav ul li{
                 display: block;
             }
             nav ul li a{
                 font-size:20px;
+                color:black;
             }
             a:hover, a.active {
                 background: none;
-                color: #0082e6;
+                font-weight: bold;
             }
             #check:checked ~ul{
                 left:0;
@@ -110,29 +110,29 @@
 </head>
 <body>
 <h2 id="width"></h2>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="check-btn">
-            <i class="fa-solid fa-burger"></i>
-        </label>
-        <label class="logo">Design X</label>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="check-btn">
+        <i class="fa-solid fa-burger"></i>
+    </label>
+    <label class="logo">Design X</label>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
 
-    <script>
-        function showWidth(){
-            const width = window.innerWidth;
-            document.getElementById("width").innerText = `Width: ${width} px`
-        }
+<script>
+    function showWidth(){
+        const width = window.innerWidth;
+        document.getElementById("width").innerText = `Width: ${width} px`
+    }
 
-        window.onload = showWidth;
-        window.onresize = showWidth;
-    </script>
+    window.onload = showWidth;
+    window.onresize = showWidth;
+</script>
 </body>
 
 </html>
