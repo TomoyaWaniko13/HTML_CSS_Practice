@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nav bar</title>
+    <script src="https://kit.fontawesome.com/f9dcfd0d96.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: monospace;
+    }
+
+    nav {
+        background-color: black;
+        /*color: white;*/
+        height: 80px;
+        width: 100%;
+    }
+
+    label.logo {
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 80px;
+        padding: 0 20px;
+    }
+
+    nav ul {
+        float: right;
+        text-decoration: none;
+        line-height: 80px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        color: white;
+        padding: 3px;
+        font-size: 17px;
+        border-radius: 4px;
+        transition: 0.5s;
+    }
+
+    a:hover, a:active {
+        color: black;
+        background-color: white;
+    }
+
+    .check-btn {
+        float: right;
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    @media (max-width: 952px) {
+        label.logo {
+            font-size: 30px;
+        }
+
+        nav ul li a {
+            font-size: 16px;
+        }
+    }
+
+    @media(max-width: 858px) {
+        .check-btn {
+            display: block;
+            margin-right: 20px;
+        }
+
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: white;
+            /*top:80px;*/
+            left: -100%;
+            text-align: center;
+            transition: all 0.25s;
+        }
+
+        nav ul li {
+            display: block;
+        }
+
+        nav ul li a {
+            font-size: 20px;
+            color: black;
+        }
+
+        a:hover, a.active {
+            background: none;
+            font-weight: bold;
+        }
+
+        #check:checked ~ ul {
+            left: 0;
+        }
+    }
+
+</style>
+<body>
+<h2 id="width"></h2>
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="check-btn">
+        <i class="fa-solid fa-burger"></i>
+    </label>
+    <label class="logo">Design X</label>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<script>
+    const showWidth = () => {
+        const width = window.innerWidth;
+        document.getElementById("width").innerText = `Width:${width}px`;
+    }
+    window.onload = showWidth;
+    window.onresize = showWidth;
+</script>
+</body>
+</html>
