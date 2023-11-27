@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- parent -->
-    <ul class="flex-list">
-      <!-- elements to expand -->
-      <li class="li1">item1</li>
-      <li class="li2">item2</li>
-      <li class="li3">item3</li>
-      <li class="li4">item4</li>
-    </ul>
-  </body>
+    <style>
+        * {
+            list-style: none;
+            box-sizing: border-box;
+            color:white;
+        }
+
+        .flex-list{
+            display: flex;
+            flex-wrap:wrap;
+       }
+
+        li{
+            flex: auto;
+            width:20%;
+            padding: 20px;
+        }
+
+        .li1 {
+            background-color: black;
+        }
+
+        .li2 {
+            background-color: red;
+        }
+
+        .li3 {
+            background-color: blue;
+        }
+
+        .li4 {
+            background-color: green
+        }
+    </style>
+</head>
+<body>
+<!-- parent -->
+<ul class="flex-list">
+    <!-- elements to expand -->
+    <li class="li1">t</li>
+    <li class="li2">t</li>
+    <li class="li3">t</li>
+    <li class="li4">t</li>
+    <li class="li1">t</li>
+    <li class="li2">t</li>
+    <li class="li3">t</li>
+    <li class="li4">t</li>
+    <li class="li1">t</li>
+    <li class="li2">t</li>
+    <li class="li3">t</li>
+    <li class="li4">t</li>
+
+</ul>
+</body>
 </html>
