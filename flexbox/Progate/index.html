@@ -1,61 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
     <style>
         * {
             list-style: none;
             box-sizing: border-box;
-            color:white;
+            color: white;
         }
 
-        .flex-list{
+        .flex-list {
             display: flex;
-            flex-wrap:wrap;
-       }
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
 
-        li{
-            flex: auto;
-            width:20%;
-            padding: 20px;
+        li {
+            width: 33%;
+            text-align: center;
         }
 
         .li1 {
-            background-color: black;
+            background-color: #c61b40;
         }
 
         .li2 {
-            background-color: red;
-        }
-
-        .li3 {
             background-color: blue;
         }
 
+        .li3 {
+            background-color: indigo;
+        }
+
         .li4 {
-            background-color: green
+            background-color: orangered;
+        }
+
+        button{
+            color: black;
+            font-size: large;
+            padding:100px;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        button:hover{
+            background-color: aqua;
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-<!-- parent -->
-<ul class="flex-list">
-    <!-- elements to expand -->
-    <li class="li1">t</li>
-    <li class="li2">t</li>
-    <li class="li3">t</li>
-    <li class="li4">t</li>
-    <li class="li1">t</li>
-    <li class="li2">t</li>
-    <li class="li3">t</li>
-    <li class="li4">t</li>
-    <li class="li1">t</li>
-    <li class="li2">t</li>
-    <li class="li3">t</li>
-    <li class="li4">t</li>
 
+<ul class="flex-list">
+    <li class="li1">1</li>
+    <li class="li2">2</li>
 </ul>
+<ul class="flex-list">
+    <li class="li3">3</li>
+    <li class="li4">4</li>
+</ul>
+
+<button>This</button>
+
 </body>
 </html>
