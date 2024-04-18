@@ -16,8 +16,15 @@ export const WindowWidth = () => {
   }, []);
 
   return (
-    <div className={'text-white'}>
-      <p> {width}</p>
+    <div>
+      <div className={'text-white flex justify-evenly'}>
+        <p className={'text-white'}>{width}px</p>
+        <p>sm: 640 px</p>
+        <p>md: 768 px</p>
+        <p>lg: 1024 px</p>
+        <p>xl: 1280 px</p>
+        <p>2xl: 1536 px</p>
+      </div>
     </div>
   );
 };
