@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div
       className={
-        'border-2 border-yellow-300 text-white mt-3 2xl:mt-10 w-full  mx-auto text-center flex flex-col justify-center '
+        'border-2 border-yellow-300 text-white mt-3 2xl:mt-10 w-full  py-5 mx-auto text-center flex flex-col justify-center '
       }
     >
       <h1 className={'text-3xl sm:text-4xl md:text-5xl xl:text-6xl  font-bold text-green-300'}>
@@ -25,7 +25,7 @@ const Hero = () => {
       </p>
       <button
         className={
-          'text-xl sm:text-2xl md:text-3xl xl:text-4xl border border-green-600 rounded-2xl bg-green-900 w-1/2 sm:w-56 mx-auto py-3 my-3 hover:bg-white hover:border-white hover:text-black hover:cursor-pointer  duration-500'
+          'text-xl text-black bg-white border border-white rounded-2xl sm:text-2xl md:text-3xl xl:text-4xl   w-1/2 sm:w-56 mx-auto py-3 my-3  hover:border-gray-400 hover:bg-gray-300 hover:cursor-pointer  duration-500'
         }
       >
         Get started!
