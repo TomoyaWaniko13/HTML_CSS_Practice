@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className={'bg-black  text-white flex max-w-[1240px] h-24 items-center justify-around '}>
-      <h1 className={'text-green-200 text-4xl font-extrabold lg:text-5xl  2xl:text-7xl '}>GREEN CAT</h1>
+      <h1 className={'text-green-200 text-4xl font-extrabold lg:text-5xl  2xl:text-7xl'}>GREEN CAT</h1>
       <ul className={'hidden  md:flex md:border-b md:border-gray-600'}>
         <li className={'px-3 mr-1 2xl:text-2xl hover:bg-white hover:text-black hover:cursor-pointer  duration-500'}>
           Docs

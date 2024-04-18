@@ -6,7 +6,7 @@ const Cards = () => {
       <div className={'flex flex-col xl:flex-row p-4 m-4 justify-center items-center text-center h-full w-full'}>
         <div className={'shadow-xl w-11/12 flex flex-col items-center hover:scale-105 duration-300'}>
           <CiUser size={50} />
-          <h2>Single User</h2>
+          <h2 className={'mb-2'}>Single User</h2>
           <p>$149</p>
           <div className={'my-5'}>
             <p>500 GB Storage</p>
@@ -16,7 +16,7 @@ const Cards = () => {
         </div>
         <div className={'shadow-xl my-10 w-11/12 flex flex-col items-center hover:scale-105 duration-300'}>
           <CiUser size={50} />
-          <h2>Single User</h2>
+          <h2 className={'mb-2'}>Single User</h2>
           <p>$149</p>
           <div className={'my-5'}>
             <p>500 GB Storage</p>
@@ -26,7 +26,7 @@ const Cards = () => {
         </div>
         <div className={'shadow-xl my-10 w-11/12 flex flex-col items-center hover:scale-105 duration-300'}>
           <CiUser size={50} />
-          <h2>Single User</h2>
+          <h2 className={'mb-2'}>Single User</h2>
           <p>$149</p>
           <div className={'my-5'}>
             <p>500 GB Storage</p>
