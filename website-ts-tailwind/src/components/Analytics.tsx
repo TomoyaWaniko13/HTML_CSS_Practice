@@ -2,8 +2,8 @@ import Nekos from '../assets/Nekos.png';
 
 const Analytics = () => {
   return (
-    <section className={'border-4 border-cyan-300 w-full py-16 px-4 text-black bg-white'}>
-      <div className={'border-2 border-red-500 xl:flex'}>
+    <section className={' w-full py-16 px-4 text-black bg-white'}>
+      <div className={'xl:flex'}>
         <img src={Nekos} alt={'image of Nekos'} className={'w-4/5 sm:w-3/5 mx-auto xl:my-52 xl:mr-10'} />
         <div className={'py-4'}>
           <h1 className={'text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-green-700'}>
