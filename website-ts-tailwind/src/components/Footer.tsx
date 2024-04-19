@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className={'bg-gray-700 text-white text-3xl p-10'}>
       <div className={'flex flex-col xl:flex-row items-center justify-between '}>
         <div className={'w-full'}>
-          <h1 className={'text-green-100 font-extrabold  lg:text-3xl  2xl:text-5xl p-10'}>GREEN CAT</h1>
+          <h1 className={'text-green-100 font-extrabold  lg:text-3xl  2xl:text-5xl pb-3'}>GREEN CAT</h1>
           <p>
             As of 2017, the domestic cat was the second most popular pet in the United States, with 95.6 million cats
             owned and around 42 million households owning at least one cat. In the United Kingdom, 26% of adults have a

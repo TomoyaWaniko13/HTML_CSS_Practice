@@ -11,8 +11,10 @@ const Navbar = () => {
 
   return (
     <header className={'bg-black text-white h-24 w-full'}>
-      <div className={'h-full flex justify-between items-center ml-10'}>
-        <h1 className={'uppercase text-lime-200 font-extrabold text-2xl sm:text-4xl md:text-5xl hover:cursor-pointer'}>
+      <div className={'h-full flex justify-between items-center ml-3'}>
+        <h1
+          className={'uppercase text-emerald-300 font-extrabold text-2xl sm:text-4xl md:text-5xl hover:cursor-pointer'}
+        >
           green cat
         </h1>
         <nav>
@@ -22,7 +24,7 @@ const Navbar = () => {
             <li className={'p-4 text-xl hover:cursor-pointer'}>Blog</li>
             <li className={'p-4 text-xl hover:cursor-pointer mr-10'}>Play</li>
           </ul>
-          <div onClick={toggleHamburger} className={'md:hidden mr-10 hover:cursor-pointer'}>
+          <div onClick={toggleHamburger} className={'md:hidden mr-4 hover:cursor-pointer'}>
             {hamburgerNeedsToBeShown ? <GiHamburgerMenu size={30} /> : <RxCross1 size={30} />}
           </div>
         </nav>

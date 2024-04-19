@@ -2,15 +2,11 @@ import NekoImage from '../assets/Nekos.png';
 
 const NekoExplanation = () => {
   return (
-    <article className={'border-4 border-cyan-500 w-full flex flex-col  xl:flex-row'}>
-      <div className={'border-4 border-green-900 flex w-full justify-center 2xl:w-3/5'}>
-        <img
-          src={NekoImage}
-          alt='image of nekos(cats)'
-          className={'w-3/5 sm:w-2/5 xl:w-4/5 2xl:w-3/5 border-4 border-amber-800'}
-        />
+    <article className={'w-full flex flex-col  xl:flex-row'}>
+      <div className={'flex w-full justify-center 2xl:w-3/5'}>
+        <img src={NekoImage} alt='image of nekos(cats)' className={'w-3/5 sm:w-2/5 xl:w-4/5 2xl:w-3/5'} />
       </div>
-      <div className={'border-2 border-red-600 w-full'}>
+      <div className={'w-full'}>
         <h1 className={'m-3  font-extrabold text-3xl'}>Manage Cat Points Centrally</h1>
         <h2 className={'m-3 text-2xl text-emerald-700 font-bold'}>GCT: Green Cat Transformation.</h2>
         <p className={'m-1 leading-8 text-lg'}>
